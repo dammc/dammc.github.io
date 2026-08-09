@@ -1,0 +1,49 @@
+# Project rules cover only consequential remote mutations. Routine local commands
+# continue to use Codex's sandbox and approval policy.
+
+prefix_rule(
+    pattern = ["git", "push"],
+    decision = "prompt",
+    justification = "Pushing changes modifies a remote repository and requires explicit approval.",
+    match = [
+        "git push",
+        "git push origin main",
+        "git push --force-with-lease origin feature",
+    ],
+    not_match = [
+        "git status",
+        "git pull",
+        "git -C . push origin main",
+    ],
+)
+
+prefix_rule(
+    pattern = ["gh", "repo", ["archive", "delete", "edit", "rename"]],
+    decision = "prompt",
+    justification = "Changing repository settings or lifecycle state requires explicit approval.",
+    match = [
+        "gh repo delete owner/site",
+        "gh repo archive owner/site",
+        "gh repo rename new-name",
+        "gh repo edit owner/site --description technical-blog",
+    ],
+    not_match = [
+        "gh repo view owner/site",
+        "gh repo clone owner/site",
+    ],
+)
+
+prefix_rule(
+    pattern = ["gh", "pr", ["close", "merge", "reopen"]],
+    decision = "prompt",
+    justification = "Changing pull-request state requires explicit approval.",
+    match = [
+        "gh pr merge 12",
+        "gh pr close 12",
+        "gh pr reopen 12",
+    ],
+    not_match = [
+        "gh pr view 12",
+        "gh pr checks 12",
+    ],
+)
