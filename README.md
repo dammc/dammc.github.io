@@ -219,7 +219,7 @@ Use `codex execpolicy check` with the exact argument sequence Codex intends to r
 
 The next development phase may evaluate and choose an architecture, then implement the blog. Until that work is explicitly requested, this repository's Codex environment does not choose among plain HTML/CSS, Jekyll, Hugo, Eleventy, Astro, or another generator; install dependencies; add deployment; create visual assets; or author articles.
 
-Tiny fixture content may be created later when necessary to test rendering, but agents should not generate substantive sociology, economics, software-development, data-science, or technology-and-society posts unless explicitly asked.
+Tiny fixture content may be created later when necessary to test rendering, but agents should not generate substantive posts unless explicitly asked.
 
 ## Official Codex documentation
 
