@@ -54,18 +54,15 @@ For an image and caption, store an optimized local image under `assets/images/po
 %}
 ```
 
-Kramdown renders footnote references as linked superscript numbers and adds backlinks from the notes at the end of the article:
+Kramdown renders footnote as linked superscript numbers and adds backlinks from the notes at the end of the article:
 
 ```markdown
 A claim with a remark.[^remark]
-
-A sourced claim.[^source]
 
 ## Notes
 {: .footnotes-heading}
 
 [^remark]: A short explanatory note.
-[^source]: [Source title](https://example.com/).
 ```
 
 Keep the `## Notes` heading, its `{: .footnotes-heading}` class line, and all footnote definitions as the final content in the article. This gives the generated endnotes a semantic heading while preserving Kramdown's linked references and backlinks.

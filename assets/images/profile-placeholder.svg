@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-labelledby="title description">
-  <title id="title">Portrait placeholder</title>
-  <desc id="description">A simple geometric placeholder to replace with the author's portrait.</desc>
-  <rect width="640" height="800" fill="#e5dfd2"/>
-  <circle cx="320" cy="285" r="112" fill="#a8a192"/>
-  <path d="M116 688c20-166 96-250 204-250s184 84 204 250" fill="#8b3024"/>
-</svg>

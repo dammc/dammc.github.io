@@ -5,8 +5,8 @@ url: "https://dammc.github.io"
 baseurl: ""
 
 author:
-  name: Your Name
-  email: hello@example.com
+  name: Carsten Damm
+  email: carsten.dm@googlemail.com
 
 permalink: /blog/:title/
 
