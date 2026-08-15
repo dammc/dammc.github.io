@@ -1,0 +1,61 @@
+---
+layout: default
+title: Home
+description: Essays about society, economies, software, and data.
+---
+<div class="home">
+  <section class="intro" aria-labelledby="intro-title">
+    <p class="eyebrow">Sociology · Economics · Technology</p>
+    <h1 id="intro-title">Ideas live at the boundaries.</h1>
+    <p class="intro-copy">Essays about how people, institutions, software, and data shape one another.</p>
+  </section>
+
+  <section class="home-section" id="blog" aria-labelledby="blog-title">
+    <div class="section-heading">
+      <p class="eyebrow">Writing</p>
+      <h2 id="blog-title">Blog</h2>
+    </div>
+
+    {% if site.posts.size > 0 %}
+      <ol class="post-list">
+        {% for post in site.posts %}
+          <li>
+            <article class="post-preview">
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+              <div>
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+                {% if post.description %}<p>{{ post.description | escape }}</p>{% endif %}
+              </div>
+            </article>
+          </li>
+        {% endfor %}
+      </ol>
+    {% else %}
+      <p class="empty-state">No essays have been published yet.</p>
+    {% endif %}
+  </section>
+
+  <section class="home-section about" id="about" aria-labelledby="about-title">
+    <img
+      class="about-photo"
+      src="{{ '/assets/images/profile-placeholder.svg' | relative_url }}"
+      alt="Placeholder portrait to replace with the author's photograph"
+      width="640"
+      height="800"
+      loading="lazy"
+      decoding="async"
+    >
+    <div>
+      <p class="eyebrow">Background</p>
+      <h2 id="about-title">About</h2>
+      <p>This is placeholder copy. Replace it with a concise introduction to your work, interests, and perspective.</p>
+    </div>
+  </section>
+
+  <section class="home-section contact" id="contact" aria-labelledby="contact-title">
+    <p class="eyebrow">Get in touch</p>
+    <h2 id="contact-title">Contact</h2>
+    <p>Questions, corrections, and thoughtful correspondence are welcome.</p>
+    <a class="contact-link" href="mailto:{{ site.author.email | escape }}">{{ site.author.email | escape }}</a>
+  </section>
+</div>

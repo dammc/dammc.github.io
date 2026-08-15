@@ -1,0 +1,29 @@
+title: Socio-Technonomic Crosscurrents
+description: Essays at the intersection of sociology, economics, software development, and data science.
+lang: en
+url: "https://dammc.github.io"
+baseurl: ""
+
+author:
+  name: Your Name
+  email: hello@example.com
+
+permalink: /blog/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - AGENTS.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
