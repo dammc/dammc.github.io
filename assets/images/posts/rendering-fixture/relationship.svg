@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title description">
+  <title id="title">Three connected fields</title>
+  <desc id="description">Three labeled circles representing society, software, and data overlap around a shared center.</desc>
+  <rect width="960" height="480" fill="#eee9de"/>
+  <g fill="none" stroke="#8b3024" stroke-width="5">
+    <circle cx="370" cy="210" r="145"/>
+    <circle cx="590" cy="210" r="145"/>
+    <circle cx="480" cy="330" r="145"/>
+  </g>
+  <g fill="#20231f" font-family="system-ui, sans-serif" font-size="27" text-anchor="middle">
+    <text x="330" y="170">Society</text>
+    <text x="630" y="170">Software</text>
+    <text x="480" y="385">Data</text>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+{% comment %}
+Required: src, meaningful alt, and positive intrinsic width and height.
+Optional: plain-text caption. Keep this contract synchronized with README.md.
+{% endcomment %}
+<figure class="article-figure">
+  <img
+    src="{{ include.src | relative_url }}"
+    alt="{{ include.alt | escape }}"
+    width="{{ include.width | escape }}"
+    height="{{ include.height | escape }}"
+    loading="lazy"
+    decoding="async"
+  >
+  {% if include.caption %}<figcaption>{{ include.caption | escape }}</figcaption>{% endif %}
+</figure>
