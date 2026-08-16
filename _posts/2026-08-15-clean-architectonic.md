@@ -160,7 +160,7 @@ If you think about this for moment, what does this imply? Doesn’t Uncle Bob sa
 
 What Kevlin Henney, in his foreword to the “Clean Architecture” book, points out is that software is a very special kind of bulding material because it just consists of itself. We write code by using other code and structuring our own. That’s all about it. As developers or architects we do not integrate soft- with hardware or the like. Those are different layers. The best thing you can do is to translate between them. But that’s not the job description of a *software* developer or architect. We’re bound to a medium which only finds structure in itself. There’s not the luxury as for an architect of houses to form plans or expectations based on considerations of bricks and stones. We’re doomed to build houses out of houses based on house-considerations, if you allow me to overtax the metaphor this way.
 
-The only regard we can cling to is the purpose of the whole as whole, mere wholeness, say. In this respect, I suspect, what Kant says about the architectonic of pure reason fully, that is *not just in some metaphorical sense*, applies to the problems of software architecture, as well.
+The only regard we can cling to is the purpose of the whole as whole, mere wholeness, say. In this respect, I suspect, what Kant says about the architectonic of pure reason fully, that is *not just in some metaphorical sense*, applies to the problems of software architecture as well.
 
 Do you remember what we said about the fictitious artisan of reason trying helplessly to form some whole only equipped with the principle of homogeneity, specification and affinity? Isn’t the software architect quite in a similar position? In my view, she is indeed. But there’s a solution and, like for Kant, it can only be a practical one.
 
@@ -269,7 +269,7 @@ Peirce, C. S. (1891). The architecture of theories. *The Monist, 1*(2), 161–17
 
     This latter expression is an international convention on how to cite Kant. “KrV” means “Kritik der reinen Vernunft”, the german original title. The letter “A” refers to the first and the letter “B” to the second and significantly revised second edition of the book. That’s why people who interpret Kant distinguish here. Thus, no worries about the syntax!
 
-    Btw: How many authors do you know who have international conventions in place on how to cite them when they’re already dead for over 200 years? Notice carefully that, when *Kant* speaks, there speaks an eternal grand master of human intelligence. So there might be good reasons to listen, but to form your own judgement, as well. He doesn’t need to be always right. And surely isn’t.
+    Btw: How many authors do you know who have international conventions in place on how to cite them when they’re already dead for over 200 years? Notice carefully that, when *Kant* speaks, there speaks an eternal grand master of human intelligence. So there might be good reasons to listen, but to form your own judgement as well. He doesn’t need to be always right. And surely isn’t.
 
 [^pdf-note-02]: <https://www.gutenberg.org/files/4280/4280-h/4280-h.htm#chap106>.
 
